@@ -15,7 +15,7 @@ public class MedicoCirujano extends Medicos {
     public void operar(boolean quirofanoDisponible) {
 
         if (quirofanoDisponible) {
-            System.out.println("Operación realizada en quirófano " + numeroQuirofano);
+            System.out.println("OperaciónNNNNNNNN realizada en quirófano " + numeroQuirofano);
         } else {
             System.out.println("No se puede operar, quirófano no disponible.");
         }
