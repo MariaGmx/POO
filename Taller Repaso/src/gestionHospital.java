@@ -102,7 +102,7 @@ public class gestionHospital {
         if (p2.getSaldoDisponible() >= valorConsulta) {
             System.out.println("Éxito.");
         } else {
-            System.out.println("Rechazado (Fondos insuficientes).");
+            System.out.println("Rechazado que mal ohhhhh nooooooooooooooooo (Fondos insuficientes).");
         }
 
         // =========================
