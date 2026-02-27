@@ -13,9 +13,8 @@ public class Medicos extends Personas {
         super(nombre, genero, DNI, edad);
         this.especialidad = especialidad;
         this.numRegistro = numRegistro;
-
-
     }
+
 
     public String getEspecialidad() {
         return especialidad;
