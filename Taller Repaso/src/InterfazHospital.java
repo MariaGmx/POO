@@ -226,7 +226,7 @@ public class InterfazHospital extends JFrame {
 
                 String estado = table.getValueAt(row, 4).toString();
 
-                if (estado.equals("En espera")) {
+                if (estado.equals("En espera...")) {
                     c.setBackground(new Color(255, 255, 153));
                 } else {
                     c.setBackground(new Color(169, 223, 191));
