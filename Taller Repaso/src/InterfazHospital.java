@@ -89,6 +89,8 @@ public class InterfazHospital extends JFrame {
         // Muestra por defecto la vista de médicos al iniciar el sistema
         mostrarMedicos();
     }
+
+    // nuevo boton
     private JButton crearBoton(String texto) {
         JButton b = new JButton(texto);
         b.setForeground(Color.WHITE);
@@ -141,6 +143,11 @@ public class InterfazHospital extends JFrame {
         panelContenido.repaint();
     }
 
+    // este es el metodo para inicializar pacientes
+    //mensajitos en pantalla
+    // id, nombre, edad, sintomas y estado
+
+
     private void inicializarPacientes() {
 
         String[] col = {"ID", "Nombre", "Edad", "Síntomas", "Estado"};
@@ -183,6 +190,8 @@ public class InterfazHospital extends JFrame {
         );
 
         split.setDividerLocation(250);
+        //configurando colores
+        //color verde
 
         JButton asignar = new JButton("Enviar a Pabellón");
         asignar.setBackground(new Color(39, 174, 96));
@@ -220,7 +229,8 @@ public class InterfazHospital extends JFrame {
             JOptionPane.showMessageDialog(this, "Seleccione un cirujano.");
             return;
         }
-
+        // mensajes opcion pabellon
+        // pabellon 1, 2 y 3
         String[] opciones = {"Pabellón 1", "Pabellón 2", "Pabellón 3"};
 
         String seleccion = (String) JOptionPane.showInputDialog(
@@ -281,7 +291,7 @@ public class InterfazHospital extends JFrame {
         });
     }
 
-
+    // ultimo metodo :)
     private void actualizarContador() {
 
         if (modeloPacientes == null) return;

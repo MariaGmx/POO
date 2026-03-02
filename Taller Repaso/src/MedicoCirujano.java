@@ -1,5 +1,5 @@
 package src;
-
+// clase medico cirujano
 
 public class MedicoCirujano extends Medicos {
 
