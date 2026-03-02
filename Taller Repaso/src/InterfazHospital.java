@@ -64,10 +64,10 @@ public class InterfazHospital extends JFrame {
 
         String[] col = {"ID", "Nombre", "Especialidad"};
         Object[][] datos = {
-                {"M01", "Dr. Carlos Gómez", "Cardiología"},
-                {"M02", "Dra. Juan David Marin", "Pediatría"},
-                {"M03", "Dra. Maria Antonia", "Radiología"},
-                {"M04", "Dra. Yeymi Tatiana", "Neurocirujana"},
+                 {"M01", "Dr. Carlos Gómez", "Cardiología"},
+                 {"M02", "Dra. Juan David Marin", "Pediatría"},
+                 {"M03", "Dra. Maria Antonia", "Radiología"},
+                 {"M04", "Dra. Yeymi Tatiana", "Neurocirujana"},
 
         };
 
