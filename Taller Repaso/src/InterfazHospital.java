@@ -123,7 +123,7 @@ public class InterfazHospital extends JFrame {
 
         inicializarPacientes();
 
-        String[] colCir = {"ID", "Nombre", "Especialidad"};
+        String[] colCir = {"ID", "Nombre", "Especialidad "};
         Object[][] datosCir = {
                 {"C01", "Dr. Felipe Rojas", "Cardiovascular"},
                 {"C02", "Dra. Natalia Vega", "Neurocirugía"},
