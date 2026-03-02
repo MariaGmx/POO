@@ -13,41 +13,82 @@ public class InterfazHospital extends JFrame {
     private DefaultTableModel modeloPacientes;
     private JLabel contadorLabel;
 
+    // Constructor de la clase InterfazHospital
     public InterfazHospital() {
 
-        setTitle("Sistema de Hospital Privado");
+        // Establece el título de la ventana
+        setTitle("Sistema Hospital Privado");
+
+        // Define el tamaño de la ventana (ancho x alto)
         setSize(1200, 750);
+
+        // Centra la ventana en la pantalla
         setLocationRelativeTo(null);
+
+        // Indica que el programa se cierre completamente al cerrar la ventana
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+        // Define el layout principal de la ventana como BorderLayout
+        // Esto permite dividir la ventana en zonas (NORTH, SOUTH, EAST, WEST, CENTER)
         setLayout(new BorderLayout());
 
+        // ======================
+        // CREACIÓN DEL MENÚ LATERAL
+        // ======================
+
+        // Crea un panel con 4 filas y 1 columna para los botones del menú
         JPanel menu = new JPanel(new GridLayout(4, 1));
+
+        // Define el ancho del menú lateral (230px) y altura automática
         menu.setPreferredSize(new Dimension(230, 0));
+
+        // Establece un color de fondo oscuro personalizado
         menu.setBackground(new Color(28, 40, 51));
 
+        // Crea los botones del sistema usando un método personalizado crearBoton()
         JButton btnMedicos = crearBoton("Médicos");
         JButton btnPacientes = crearBoton("Pacientes");
         JButton btnCirujanos = crearBoton("Cirujanos");
         JButton btnSalir = crearBoton("Salir");
 
+        // Agrega los botones al panel del menú
         menu.add(btnMedicos);
         menu.add(btnPacientes);
         menu.add(btnCirujanos);
         menu.add(btnSalir);
 
+        // Agrega el menú al lado izquierdo de la ventana
         add(menu, BorderLayout.WEST);
 
+        // ======================
+        // PANEL DE CONTENIDO PRINCIPAL
+        // ======================
+
+        // Crea el panel donde se mostrará el contenido dinámico
         panelContenido = new JPanel(new BorderLayout());
+
+        // Lo agrega al centro de la ventana
         add(panelContenido, BorderLayout.CENTER);
 
+        // ======================
+        // EVENTOS DE LOS BOTONES
+        // ======================
+
+        // Cuando se hace clic en "Médicos", muestra la vista de médicos
         btnMedicos.addActionListener(e -> mostrarMedicos());
+
+        // Cuando se hace clic en "Pacientes", muestra la vista de pacientes
         btnPacientes.addActionListener(e -> mostrarPacientes());
+
+        // Cuando se hace clic en "Cirujanos", muestra la vista de cirujanos
         btnCirujanos.addActionListener(e -> mostrarVistaCirujanos());
+
+        // Cuando se hace clic en "Salir", cierra completamente la aplicación
         btnSalir.addActionListener(e -> System.exit(0));
 
+        // Muestra por defecto la vista de médicos al iniciar el sistema
         mostrarMedicos();
     }
-
     private JButton crearBoton(String texto) {
         JButton b = new JButton(texto);
         b.setForeground(Color.WHITE);
