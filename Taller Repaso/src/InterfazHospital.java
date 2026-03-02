@@ -65,7 +65,10 @@ public class InterfazHospital extends JFrame {
         String[] col = {"ID", "Nombre", "Especialidad"};
         Object[][] datos = {
                 {"M01", "Dr. Carlos Gómez", "Cardiología"},
-                {"M02", "Dra. Laura Méndez", "Pediatría"}
+                {"M02", "Dra. Juan David Marin", "Pediatría"},
+                {"M03", "Dra. Maria Antonia", "Radiología"},
+                {"M04", "Dra. Yeymi Tatiana", "Neurocirujana"},
+
         };
 
         JTable tabla = new JTable(new DefaultTableModel(datos, col));
@@ -123,7 +126,10 @@ public class InterfazHospital extends JFrame {
         String[] colCir = {"ID", "Nombre", "Especialidad"};
         Object[][] datosCir = {
                 {"C01", "Dr. Felipe Rojas", "Cardiovascular"},
-                {"C02", "Dra. Natalia Vega", "Neurocirugía"}
+                {"C02", "Dra. Natalia Vega", "Neurocirugía"},
+                {"C03", "Dra. Diana Marcela", "Cardiología"}
+
+
         };
 
         tablaCirujanos = new JTable(new DefaultTableModel(datosCir, colCir));
