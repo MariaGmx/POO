@@ -15,7 +15,7 @@ public class InterfazHospital extends JFrame {
 
     public InterfazHospital() {
 
-        setTitle("Sistema Hospital Privado");
+        setTitle("Sistema de Hospital Privado");
         setSize(1200, 750);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
